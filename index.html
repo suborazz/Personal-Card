@@ -3,75 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Title Tag: Optimized for SEO -->
-  <title>Personalized Greeting Card - Create Custom Messages</title>
-
-  <!-- Meta Description: Provides a brief overview of the page content -->
-  <meta name="description" content="Create a personalized greeting card with a custom message for any occasion. Enter your name and receive a unique greeting.">
-
-  <!-- Open Graph Meta Tags for Social Sharing (Social Tags) -->
-  <meta property="og:title" content="Personalized Greeting Card - Create Custom Messages">
-  <meta property="og:description" content="Enter your name and get a personalized greeting card with a unique message. Perfect for any occasion.">
-  <meta property="og:image" content="path/to/image.jpg"> <!-- Image URL for social sharing -->
-  <meta property="og:url" content="https://yourwebsite.com/personalized-greeting-card">
-
-  <!-- Twitter Card Meta Tags for Social Sharing -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Personalized Greeting Card - Create Custom Messages">
-  <meta name="twitter:description" content="Enter your name and get a personalized greeting card with a unique message. Perfect for any occasion.">
-  <meta name="twitter:image" content="path/to/image.jpg"> <!-- Image URL for Twitter sharing -->
-
-  <!-- Link to External CSS -->
+  <title>Personalized Greeting Card</title>
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Google Analytics Tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRJ9YDDDVJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-WRJ9YDDDVJ');
-  </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRJ9YDDDVJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <!-- Canonical URL Tag: Helps avoid duplicate content issues -->
-  <link rel="canonical" href="https://yourwebsite.com/personalized-greeting-card">
-
+  gtag('config', 'G-WRJ9YDDDVJ');
+</script>
+  
 </head>
 <body>
   <div class="container">
     <div class="card">
-      <!-- H1: Main Heading (used only once per page) -->
       <h1>Welcome to the Personalized Greeting Card</h1>
-
-      <!-- H2: Subheading for a brief introduction -->
-      <h2>Create Your Own Greeting Message</h2>
-
-      <p id="greetingMessage">Please enter your name below to receive a personalized greeting:</p>
-
-      <!-- Image with Alt Attribute (for accessibility and SEO) -->
-      <img src="path/to/image.jpg" alt="Greeting card with a personalized message" class="greeting-card-image">
-
-      <!-- Input field and button for interaction -->
+      <p id="greetingMessage">Please enter your name below:</p>
       <input type="text" id="nameInput" placeholder="Enter your name..." />
       <button onclick="generateGreeting()">Greet Me!</button>
-
-      <!-- H3: Footer Section for additional info -->
-      <h3>Enjoy your day with a custom greeting!</h3>
-      
       <div id="cardFooter">Enjoy your day!</div>
     </div>
   </div>
 
-  <!-- Generated Cards Section for results -->
   <div id="generatedCardArea" class="generated-cards"></div>
 
-  <!-- Internal Linking: Link to related page -->
-  <p><a href="/other-page">Explore more personalized greeting options</a></p>
-
-  <!-- Link to External JavaScript -->
   <script src="script.js"></script>
-
-  <!-- Robots Meta Tag: Ensures proper indexing and prevents indexing certain pages if needed -->
-  <meta name="robots" content="index, follow">
 </body>
 </html>
